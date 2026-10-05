@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Brown Bakery | ร้านเบเกอรี่</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Sweet Brown <span>Bakery</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">☰</button>
+      <nav id="mainNav">
+        <a href="#home">หน้าแรก</a>
+        <a href="#menu">เมนู</a>
+        <a href="#about">เกี่ยวกับร้าน</a>
+        <a href="#contact">ติดต่อ</a>
+        <button class="cart-btn" id="openCart">🛒 ตะกร้า <b id="cartCount">0</b></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">BAKED WITH LOVE ♡</p>
+          <h1>ความหวานเล็ก ๆ<br><span>ที่ทำให้วันของคุณดีขึ้น</span></h1>
+          <p class="hero-desc">เบเกอรี่โฮมเมด สดใหม่ หอม อร่อย ใช้วัตถุดิบคุณภาพ เหมาะสำหรับทานเล่นหรือมอบเป็นของขวัญ</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn primary">ดูเมนูทั้งหมด</a>
+            <a href="#about" class="btn outline">รู้จักร้านของเรา</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="cake-emoji">🧁</div>
+          <div class="floating-card">Fresh<br><strong>Every Day</strong> ♡</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container feature-grid">
+        <div><span>🥐</span><div><b>อบสดใหม่</b><small>ทำใหม่ทุกวัน</small></div></div>
+        <div><span>🤎</span><div><b>วัตถุดิบคุณภาพ</b><small>คัดสรรอย่างดี</small></div></div>
+        <div><span>🎁</span><div><b>แพ็กเกจน่ารัก</b><small>เหมาะเป็นของขวัญ</small></div></div>
+        <div><span>🚚</span><div><b>สั่งซื้อสะดวก</b><small>เลือกเมนูได้ง่าย</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-title">
+        <p class="eyebrow">OUR MENU</p>
+        <h2>เมนูแนะนำจากทางร้าน</h2>
+        <p>เลือกขนมที่ชอบ แล้วเพิ่มลงตะกร้าได้เลย</p>
+      </div>
+      <div class="container product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-art"><span>🍰</span><span>☕</span><span>🥧</span></div>
+        <div>
+          <p class="eyebrow">ABOUT US</p>
+          <h2>ความอร่อยที่ตั้งใจทำให้คุณ</h2>
+          <p>Sweet Brown Bakery เป็นร้านเบเกอรี่เล็ก ๆ ที่ตั้งใจทำขนมให้มีรสชาติอร่อยและหน้าตาน่ารัก เราใส่ใจตั้งแต่การเลือกวัตถุดิบจนถึงการแพ็กสินค้า</p>
+          <p>ไม่ว่าจะซื้อทานเอง ซื้อฝากเพื่อน หรือสั่งในโอกาสพิเศษ เราพร้อมส่งต่อความสุขในทุกกล่อง ♡</p>
+          <a href="#contact" class="btn primary">ติดต่อร้าน</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-title">
+        <p class="eyebrow">CONTACT</p>
+        <h2>ติดต่อ Sweet Brown Bakery</h2>
+        <p>สอบถามเมนูหรือรายละเอียดการสั่งซื้อได้เลย</p>
+      </div>
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>📍 ร้านของเรา</h3>
+          <p>Sweet Brown Bakery<br>เปิดทุกวัน 09:00 - 18:00 น.</p>
+          <p>📞 08X-XXX-XXXX<br>💬 Facebook: Sweet Brown Bakery</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="name" placeholder="ชื่อของคุณ" required>
+          <input type="email" id="email" placeholder="อีเมล" required>
+          <textarea id="message" rows="4" placeholder="ข้อความที่ต้องการสอบถาม" required></textarea>
+          <button class="btn primary" type="submit">ส่งข้อความ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div><strong>Sweet Brown Bakery</strong><p>Homemade Bakery ♡</p></div>
+      <p>© 2026 Sweet Brown Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="cartModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeCart">×</button>
+      <h2>🛒 ตะกร้าสินค้า</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total"><span>รวมทั้งหมด</span><strong id="cartTotal">฿0</strong></div>
+      <button class="btn primary full" id="checkoutBtn">สั่งซื้อสินค้า</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
